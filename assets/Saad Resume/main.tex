@@ -1,0 +1,88 @@
+\newcommand{\RNum}[1]{\uppercase\expandafter{\romannumeral #1\relax}}
+\PassOptionsToPackage{dvipsnames}{xcolor}
+\documentclass[10pt,a4paper]{altacv}
+\geometry{left=1cm,right=9cm,marginparwidth=6.8cm,marginparsep=1.2cm,top=1.25cm,bottom=1.25cm,footskip=2\baselineskip}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[default]{lato}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\definecolor{Navy}{HTML}{000080}       %%%
+\definecolor{SlateGrey}{HTML}{2E2E2E}  %%%
+\definecolor{LightGrey}{HTML}{666666}  %%%
+\colorlet{heading}{Navy}               %%%
+\colorlet{accent}{Navy}                %%%
+\colorlet{emphasis}{SlateGrey}         %%%
+\colorlet{body}{LightGrey}             %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+\addbibresource{sample.bib}
+\usepackage[colorlinks]{hyperref}
+
+%%%%%%%%%%%%%%%%
+\begin{document}
+%%%%%%%%%%%%%%%%
+
+\name{Saad Islam Khan}
+\tagline{Hardware Design \& Verification Engineer | BS in Electronics}
+ \photo{3cm}{1}
+\personalinfo
+{
+  \linkedin{https://www.linkedin.com/in/ksaad3747}
+  \email{ksaad3747@gmail.com}
+  \phone{+92-3105270201}
+  \location{Islamabad, Pakistan}
+}
+
+\begin{fullwidth}
+\makecvheader
+\end{fullwidth}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\cvsection[side]{Experience}
+
+\cvevent{Jr. Hardware Engineer}{DreamBig Semiconductors Inc.}{September 2022 }{Isb, Pakistan}
+\begin{itemize}
+\item Working as an \textbf{Jr. Design Verification Engineer}
+\item Using Universal Verification Methodology \textbf{UVM} to verify \textbf{SMART-NIC SOC's} Design
+\item Deep learning of various interconnects and comm-protocols \textbf{PCIE CXL NIC APB CMN AXI AHB}
+\item Working on environment for stimulus to pass through various comm-protocols and error reporting in "VCS". 
+\end{itemize}
+\divider
+\medskip
+
+\cvevent{Design Verification Training}{SINES-NUST}{June 2022 -- August 2022}{Isb, Pakistan}
+\begin{itemize}
+\item Hands-on System Verilog based veriﬁcation which includes User deﬁned data type and structures, Interfaces and virtual interfaces, Clocking blocks, Classes, Randomization, Coverage and Mailbox. Veriﬁed a memory design using System Verilog through randomized stimulus in System
+Verilog.
+\item Created Layered Testbench, generated and drove transactions to DUT, Monitored and Veriﬁed with golden results in Scoreboard.
+\item Hands-on learning and implementation of architecture and ﬂow of transaction in UVM with Cadence Xcelium.
+\end{itemize}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\cvsection{Projects}
+
+\cvevent{FPGA Based 7-Segment Rolling Display}{}{}{}
+\begin{itemize}
+\item Design included basic design like clock dividers and 7-segment conding, decoding.
+\item Synthesized the design successfully on FPGA Spartan3
+\end{itemize}
+\divider
+
+\cvevent{Memeory Read/Write using AHB-Lite Protocol}{}{}{}
+\begin{itemize} 
+\item Verified a memory module connected to Test-Bench using AHB-Lite protocol by passing stimulus and comparing expected result with actual results.
+\end{itemize}
+\divider
+
+\cvevent{Smart Home Automation Device}{}{}{}
+\begin{itemize}
+\item Used MQTT Protocol to control an Arduino based Home Automation system. Created website and provided remotely accessibility.
+\end{itemize}
+\divider
+
+\cvevent{Social-Distance Measuring Robot}{}{}{}
+\begin{itemize}
+\item Created an Arduino based human following robot for Medical robotics development. It can detect distance between two objects and produce a voice alert to mentain social distance real-time.
+\end{itemize}
+\clearpage
+\end{document}
